@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Assistant</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="sidebar">
+
+<button id="newChat">
++ New Chat
+</button>
+
+<div class="history">
+
+</div>
+
+<div class="user">
+
+<p>{{username}}</p>
+
+<a href="/logout">
+Logout
+</a>
+
+</div>
+
+</div>
+
+<div class="main">
+
+<div id="chatArea">
+
+<h1>How can I help you today?</h1>
+
+</div>
+
+<div class="input-area">
+
+<input
+id="messageInput"
+placeholder="Message AI...">
+<input
+type="file"
+id="pdfInput"
+accept=".pdf"
+hidden>
+
+<button id="sendBtn">
+➤
+</button>
+
+<button id="micBtn">
+🎤
+</button>
+
+<button id="pdfBtn">
+📄 PDF
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static',filename='js/chat.js') }}"></script>
+<script src="{{ url_for('static', filename='js/speech.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</body>
+</html>

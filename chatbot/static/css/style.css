@@ -1,0 +1,142 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#212121;
+color:white;
+height:100vh;
+}
+
+.app{
+display:flex;
+height:100vh;
+}
+
+.sidebar{
+width:260px;
+background:#171717;
+padding:15px;
+display:flex;
+flex-direction:column;
+}
+
+.sidebar button{
+padding:12px;
+border:none;
+background:#2f2f2f;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.history{
+flex:1;
+margin-top:20px;
+}
+
+.user{
+border-top:1px solid #333;
+padding-top:20px;
+}
+
+.main{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+#chatArea{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+.input-area{
+padding:20px;
+display:flex;
+gap:10px;
+}
+
+.input-area input{
+flex:1;
+padding:15px;
+border-radius:15px;
+border:none;
+background:#2f2f2f;
+color:white;
+}
+
+.input-area button{
+padding:15px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.auth-container{
+    width:400px;
+    margin:100px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.auth-container form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.auth-container input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+.auth-container button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.user{
+background:#303030;
+padding:12px;
+margin:10px 0;
+border-radius:12px;
+}
+
+.assistant{
+background:#1e1e1e;
+padding:12px;
+margin:10px 0;
+border-radius:12px;
+}
+
+.history div{
+padding:10px;
+cursor:pointer;
+margin-bottom:8px;
+border-radius:8px;
+}
+
+.history div:hover{
+background:#2f2f2f;
+}
+
+pre{
+    background:#111;
+    padding:15px;
+    border-radius:10px;
+    overflow-x:auto;
+    margin-top:10px;
+}
+
+code{
+    font-family:Consolas,monospace;
+}
